@@ -1,0 +1,140 @@
+{
+  "weights": {
+    "direction_bias": 0.30,
+    "volatility_bias": 0.25,
+    "structure_confidence": 0.25,
+    "persistence": 0.20
+  },
+  "score_components": {
+    "common": {
+      "eps": 0.000001
+    },
+    "direction": {
+      "core_weights": {
+        "not_imb": 0.50,
+        "vol_imb": 0.20,
+        "type_imb": 0.30
+      },
+      "conviction_weights": {
+        "single_leg_pct": 0.45,
+        "rel_notional_to_90d": 0.55
+      },
+      "conviction_floor": 0.35,
+      "clip_min": -100.0,
+      "clip_max": 100.0
+    },
+    "volatility": {
+      "weights": {
+        "iv30_chg_pct": 0.55,
+        "vol_gap_s": 0.30,
+        "iv_level": 0.15
+      },
+      "clip_min": -100.0,
+      "clip_max": 100.0
+    },
+    "confidence": {
+      "weights": {
+        "single_leg_pct": 0.45,
+        "contingent_pct_inverse": 0.25,
+        "trade_count": 0.15,
+        "imb_agree": 0.15
+      },
+      "clip_min": 0.0,
+      "clip_max": 100.0
+    },
+    "persistence": {
+      "weights": {
+        "oi_pct_rank": 0.45,
+        "rel_notional_to_90d": 0.35,
+        "money_rich": 0.20
+      },
+      "clip_min": 0.0,
+      "clip_max": 100.0
+    }
+  },
+  "winsorize": {
+    "enabled": true,
+    "lower_quantile": 0.01,
+    "upper_quantile": 0.99
+  },
+  "quantiles": {
+    "low": 0.25,
+    "medium": 0.50,
+    "high": 0.75
+  },
+  "quadrant_thresholds": {
+    "direction_cutoff": 0.00,
+    "volatility_cutoff": 0.00
+  },
+  "classification": {
+    "neutral_gate": {
+      "min_confidence": 55.0,
+      "min_persistence": 50.0
+    },
+    "label_thresholds": {
+      "directional_min_abs_direction": 30.0,
+      "volatility_min_abs_volatility": 28.0,
+      "today_min_confidence": 72.0,
+      "today_min_persistence": 68.0,
+      "today_min_abs_direction": 55.0,
+      "previous_compression_min_abs_volatility": 25.0
+    },
+    "probability_tiers": {
+      "weights": {
+        "direction_abs": 0.20,
+        "volatility_abs": 0.15,
+        "confidence": 0.35,
+        "persistence": 0.30
+      },
+      "high_min": 75.0,
+      "mid_min": 60.0,
+      "q4_penalty": 12.0
+    },
+    "watchlist": {
+      "min_abs_direction": 25.0,
+      "min_abs_volatility": 25.0,
+      "min_confidence": 45.0,
+      "min_persistence": 45.0
+    },
+    "event_adjustments": {
+      "today": {
+        "direction_multiplier": 0.70,
+        "volatility_multiplier": 1.10,
+        "confidence_multiplier": 0.92,
+        "persistence_multiplier": 0.88
+      },
+      "future": {
+        "direction_multiplier": 0.85,
+        "volatility_multiplier": 1.05,
+        "confidence_multiplier": 0.97,
+        "persistence_multiplier": 0.95
+      },
+      "previous": {
+        "direction_multiplier": 1.00,
+        "volatility_multiplier": 1.08,
+        "confidence_multiplier": 1.00,
+        "persistence_multiplier": 1.03
+      },
+      "none": {
+        "direction_multiplier": 1.00,
+        "volatility_multiplier": 1.00,
+        "confidence_multiplier": 1.00,
+        "persistence_multiplier": 1.00
+      }
+    }
+  },
+  "event_filters": {
+    "relative_volume_multiplier": 2.00,
+    "relative_notional_multiplier": 1.50,
+    "trade_count_multiplier": 1.20
+  },
+  "shift_detection": {
+    "direction_delta": 20.0,
+    "volatility_delta": 20.0,
+    "persistence_floor": 55.0,
+    "median_lookback_days": 5,
+    "confirmation_days": 2,
+    "signal_label_on_shift": "trend_change",
+    "probability_floor": "medium"
+  }
+}

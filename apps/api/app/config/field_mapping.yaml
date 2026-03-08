@@ -1,0 +1,23 @@
+{
+  "Relative Volume to 90-Day Avg": "RelVolTo90D",
+  "Call Volume": "CallVolume",
+  "Put Volume": "PutVolume",
+  "Put %": "PutPct",
+  "% Single-Leg": "SingleLegPct",
+  "% Multi Leg": "MultiLegPct",
+  "% ContingentPct": "ContingentPct",
+  "Relative Notional to 90-Day Avg": "RelNotionalTo90D",
+  "Call $Notional": "CallNotional",
+  "Put $Notional": "PutNotional",
+  "symbol": "symbol",
+  "Volatility % Chg": "IV30ChgPct",
+  "Current IV30": "IV30",
+  "20-Day Historical Vol": "HV20",
+  "1-Year Historical Vol": "HV1Y",
+  "IV30 % Rank": "IVR",
+  "IV30 52-Week Position": "IV_52W_P",
+  "Current Option Volume": "Volume",
+  "Open Interest % Rank": "OI_PctRank",
+  "Earnings": "Earnings",
+  "Trade Count": "Trade_Count"
+}
