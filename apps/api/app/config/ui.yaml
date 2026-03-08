@@ -1,0 +1,28 @@
+{
+  "default_date_group_size_days": 30,
+  "default_filters": {
+    "earnings_regimes": [
+      "neutral"
+    ],
+    "quadrants": [
+      "bullish_expansion",
+      "bullish_compression",
+      "bearish_expansion",
+      "bearish_compression"
+    ]
+  },
+  "highlight_rules": {
+    "default_signal_label": "neutral",
+    "emphasis_probability_tier": "high",
+    "highlight_quadrants": [
+      "bullish_expansion",
+      "bearish_expansion"
+    ]
+  },
+  "quadrant_labels": {
+    "bullish_expansion": "Bullish Expansion",
+    "bullish_compression": "Bullish Compression",
+    "bearish_expansion": "Bearish Expansion",
+    "bearish_compression": "Bearish Compression"
+  }
+}

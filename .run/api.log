@@ -1,0 +1,184 @@
+INFO  [alembic.runtime.migration] Context impl SQLiteImpl.
+INFO  [alembic.runtime.migration] Will assume non-transactional DDL.
+INFO:     Will watch for changes in these directories: ['/Users/bin/Github/MESO/apps/api']
+INFO:     Uvicorn running on http://127.0.0.1:18000 (Press CTRL+C to quit)
+INFO:     Started reloader process [5017] using StatReload
+INFO:     Started server process [5021]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:49493 - "GET /api/v1/filters HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49494 - "GET /api/v1/date-groups?limit=6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49493 - "GET /api/v1/date-groups?limit=9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49493 - "GET /api/v1/chart-points?trade_date=2026-03-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61955 - "GET /api/v1/filters HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61957 - "GET /api/v1/chart-points?trade_date=2026-03-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61956 - "GET /api/v1/date-groups?limit=9 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61956 - "GET /api/v1/date-groups?limit=30 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63188 - "GET /api/v1/signals/AAOI?trade_date=2026-03-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63189 - "GET /api/v1/symbol-history/AAOI?lookback_days=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63469 - "GET /api/v1/signals/TSLA?trade_date=2026-03-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63470 - "GET /api/v1/symbol-history/TSLA?lookback_days=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63957 - "GET /api/v1/signals/SPY?trade_date=2026-03-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63958 - "GET /api/v1/symbol-history/SPY?lookback_days=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50049 - "GET /api/v1/signals/AAPL?trade_date=2026-03-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50050 - "GET /api/v1/symbol-history/AAPL?lookback_days=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50050 - "GET /api/v1/signals/QQQ?trade_date=2026-03-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50049 - "GET /api/v1/symbol-history/QQQ?lookback_days=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50050 - "GET /api/v1/symbol-history/TSLA?lookback_days=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50049 - "GET /api/v1/signals/TSLA?trade_date=2026-03-25 HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'app/schemas/history_schema.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [5021]
+INFO:     Started server process [9937]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:54575 - "GET /api/v1/filters HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54578 - "GET /api/v1/signals/TSLA?trade_date=2026-03-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54577 - "GET /api/v1/chart-points?trade_date=2026-03-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54580 - "GET /api/v1/symbol-history/TSLA?lookback_days=10&anchor_trade_date=2026-03-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54579 - "GET /api/v1/symbol-history/TSLA?lookback_days=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54576 - "GET /api/v1/date-groups?limit=30 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54618 - "GET /api/v1/chart-points?trade_date=2026-03-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54619 - "GET /api/v1/signals/TSLA?trade_date=2026-03-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54620 - "GET /api/v1/symbol-history/TSLA?lookback_days=10&anchor_trade_date=2026-03-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56279 - "GET /api/v1/filters HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56281 - "GET /api/v1/chart-points?trade_date=2026-03-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56283 - "GET /api/v1/symbol-history/TSLA?lookback_days=10&anchor_trade_date=2026-03-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56282 - "GET /api/v1/signals/TSLA?trade_date=2026-03-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56284 - "GET /api/v1/symbol-history/TSLA?lookback_days=10 HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'app/schemas/history_schema.py'. Reloading...
+INFO:     127.0.0.1:56280 - "GET /api/v1/date-groups?limit=30 HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [9937]
+INFO:     Started server process [15197]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'app/schemas/history_schema.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15197]
+INFO:     Started server process [15358]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'app/schemas/history_schema.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [15358]
+INFO:     Started server process [27188]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'app/schemas/history_schema.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [27188]
+INFO:     Started server process [27250]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'app/schemas/history_schema.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [27250]
+INFO:     Started server process [28102]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'app/services/history_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [28102]
+INFO:     Started server process [28170]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'app/api/routes/dashboard.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [28170]
+INFO:     Started server process [28253]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:51275 - "GET /api/v1/filters HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51277 - "GET /api/v1/chart-points?trade_date=2026-03-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51276 - "GET /api/v1/date-groups?limit=30 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51522 - "GET /api/v1/chart-points?trade_date=2026-03-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51523 - "GET /api/v1/trend-consistency?trade_date=2026-03-25&limit=6 HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'app/api/routes/dashboard.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [28253]
+INFO:     Started server process [30243]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'tests/test_dashboard_trend_consistency.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [30243]
+INFO:     Started server process [31391]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'tests/test_dashboard_trend_consistency.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [31391]
+INFO:     Started server process [31772]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:53406 - "GET /api/v1/filters HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53408 - "GET /api/v1/chart-points?trade_date=2026-03-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53407 - "GET /api/v1/date-groups?limit=30 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53409 - "GET /api/v1/trend-consistency?trade_date=2026-03-25&limit=6 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54307 - "GET /api/v1/symbol-history/IBM?lookback_days=10 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54306 - "GET /api/v1/signals/IBM?trade_date=2026-03-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55006 - "GET /api/v1/filters HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55007 - "GET /api/v1/date-groups?limit=30 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55007 - "GET /api/v1/chart-points?trade_date=2026-03-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55006 - "GET /api/v1/trend-consistency?trade_date=2026-03-25&limit=6 HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'app/schemas/history_schema.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [31772]
+INFO:     Started server process [34457]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'app/services/history_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [34457]
+INFO:     Started server process [34512]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'app/api/routes/dashboard.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [34512]
+INFO:     Started server process [34660]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'tests/test_dashboard_trend_consistency.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [34660]
+INFO:     Started server process [35098]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:55739 - "GET /api/v1/filters HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55740 - "GET /api/v1/date-groups?limit=30 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55865 - "GET /api/v1/filters HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55866 - "GET /api/v1/date-groups?limit=30 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55866 - "GET /api/v1/chart-points?trade_date=2026-03-25 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55865 - "GET /api/v1/trend-consistency?trade_date=2026-03-25&limit=6 HTTP/1.1" 200 OK
