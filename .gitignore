@@ -28,6 +28,8 @@ tests/
 # Node / Vite
 node_modules/
 npm-debug.log*
+*.log
+.run/
 
 # Environment
 .env
@@ -36,3 +38,4 @@ npm-debug.log*
 
 # codex
 AGENTS.md
+apps/web/.vite
