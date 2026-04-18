@@ -130,8 +130,8 @@ class FeatureEngine:
 
     def _normalize_unit_interval(self, value: float) -> float:
         if value > 1:
-            return value / 100
-        return value
+            value = value / 100
+        return min(1.0, max(0.0, value))
 
     def _safe_log_ratio(
         self,
