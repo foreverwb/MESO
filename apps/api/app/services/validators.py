@@ -122,7 +122,11 @@ def validate_record(
 
     for field_name, display_name in PERCENTAGE_RANGE_FIELDS.items():
         raw_value = canonical_record.get(field_name)
-        if raw_value is not None and not 0 <= raw_value <= 100:
+        if field_name == "iv_52w_p":
+            # IV_52W_P can exceed 100 when IV is above the 52-week high
+            if raw_value is not None and raw_value < 0:
+                issues.append(_issue(display_name, raw_value, "value must be non-negative", effective_row_index))
+        elif raw_value is not None and not 0 <= raw_value <= 100:
             issues.append(_issue(display_name, raw_value, "value must be between 0 and 100", effective_row_index))
 
     call_volume = canonical_record.get("call_volume")
